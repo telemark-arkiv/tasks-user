@@ -2,8 +2,7 @@
 
 var Seneca = require('seneca')
 var Mesh = require('seneca-mesh')
-var getTasksUser = require('./lib/get-tasks-user')
-var updateTasksUser = require('./lib/update-tasks-user')
+var tasksUser = require('./lib/tasks-user')
 var envs = process.env
 
 var options = {
@@ -33,5 +32,6 @@ if (envs.TASKS_USER_ISOLATED) {
   Service.use(Mesh, options.mesh)
 }
 
-Service.use(getTasksUser, options.compilo)
-Service.use(updateTasksUser, options.compilo)
+Service.use('entity')
+Service.use('jsonfile-store',{folder:'storage'})
+Service.use(tasksUser, options.compilo)
