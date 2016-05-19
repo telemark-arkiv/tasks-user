@@ -1,11 +1,11 @@
 'use strict'
 
-var Seneca = require('seneca')
-var Mesh = require('seneca-mesh')
-var tasksUser = require('./lib/tasks-user')
-var envs = process.env
+const Seneca = require('seneca')
+const Mesh = require('seneca-mesh')
+const tasksUser = require('./lib/tasks-user')
+const envs = process.env
 
-var options = {
+const options = {
   seneca: {
     tag: envs.TASKS_USER_TAG || 'tasks-user'
   },
@@ -24,7 +24,8 @@ var options = {
     port: envs.TASKS_USER_PORT || '8000'
   }
 }
-var Service = Seneca(options.seneca)
+
+const Service = Seneca(options.seneca)
 
 if (envs.TASKS_USER_ISOLATED) {
   Service.listen(options.isolated)
