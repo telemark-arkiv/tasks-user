@@ -31,6 +31,7 @@ RUN npm install --production
 ENV TASKS_USER_TAG tasks-user
 ENV TASKS_USER_HOST localhost
 ENV TASKS_USER_PORT 8000
+ENV TASKS_USER_MONGODB_URI mongodb://localhost:27017/tasks
 
 # Startup
 CMD ["node", "service.js", "--seneca-log=type:act"]

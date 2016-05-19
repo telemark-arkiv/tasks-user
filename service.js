@@ -16,8 +16,8 @@ var options = {
       {pin: 'info:tasks, type:user', model: 'observe'}
     ]
   },
-  compilo: {
-    url: envs.TASKS_COLLECTOR_COMPILO_URL || 'http://compilo.no'
+  mongodb: {
+    uri: envs.TASKS_USER_MONGODB_URI || 'mongodb://localhost:27017/tasks'
   },
   isolated: {
     host: envs.TASKS_USER_HOST || 'localhost',
@@ -33,5 +33,5 @@ if (envs.TASKS_USER_ISOLATED) {
 }
 
 Service.use('entity')
-Service.use('jsonfile-store',{folder:'storage'})
+Service.use('mongo-store', options.mongodb)
 Service.use(tasksUser, options.compilo)
