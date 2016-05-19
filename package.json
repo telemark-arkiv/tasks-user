@@ -1,6 +1,6 @@
 {
   "name": "tasks-user",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "Collect all tasks for a user",
   "license": "MIT",
   "author": {
@@ -21,6 +21,7 @@
     "coverage": "tap test/*.js --coverage",
     "coveralls": "tap --cov --coverage-report=lcov test/*.js && cat coverage/lcov.info | coveralls",
     "start": "node service.js",
+    "isolated": "TASKS_USER_ISOLATED=1 node service.js",
     "setup": "npm install && node setup.js"
   },
   "repository": {

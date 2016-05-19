@@ -35,5 +35,5 @@ Call the service
 
 ```
 $ curl -d '{"role":"tasks", "type": "user", "user":"gasg"}' -v http://localhost:8000/act
-$ curl -d '{"info":"tasks", "type": "user", "data":{"user": "gasg", "systemid": "npm", "data": ["awsm"]}}' -v http://localhost:8000/act
+$ curl -d '{"info":"tasks", "type": "user", "data":{"user": "gasg", "system": "npm", "data": ["awsm"]}}' -v http://localhost:8000/act
 ```
