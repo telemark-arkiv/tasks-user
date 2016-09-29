@@ -1,6 +1,6 @@
 {
   "name": "tasks-user",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Collect all tasks for a user",
   "license": "MIT",
   "author": {
@@ -14,7 +14,7 @@
   "homepage": "https://github.com/telemark/tasks-user",
   "main": "service.js",
   "engines": {
-    "node": ">=4.4.4"
+    "node": ">=4.6.0"
   },
   "scripts": {
     "test": "standard && nsp check && tap --reporter=spec test/**/*.js",
