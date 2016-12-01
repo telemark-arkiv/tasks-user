@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/telemark/tasks-user.svg?branch=master)](https://travis-ci.org/telemark/tasks-user)
+[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
 # tasks-user
 Microservice to collect a user's task
 
