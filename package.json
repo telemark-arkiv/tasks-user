@@ -24,7 +24,8 @@
     "coveralls": "tap --cov --coverage-report=lcov test/**/*.js && cat coverage/lcov.info | coveralls",
     "start": "node service.js",
     "isolated": "TASKS_USER_ISOLATED=1 node service.js",
-    "setup": "npm install"
+    "setup": "npm install",
+    "standard-fix": "standard --fix"
   },
   "repository": {
     "type": "git",
