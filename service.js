@@ -16,9 +16,6 @@ const options = {
       {pin: 'info:tasks, type:user', model: 'observe'}
     ]
   },
-  mongodb: {
-    uri: envs.TASKS_USER_MONGODB_URI || 'mongodb://localhost:27017/tasks'
-  },
   isolated: {
     host: envs.TASKS_USER_HOST || 'localhost',
     port: envs.TASKS_USER_PORT || '8000'
@@ -33,6 +30,4 @@ if (envs.TASKS_USER_ISOLATED) {
   Service.use(Mesh, options.mesh)
 }
 
-Service.use('entity')
-Service.use('mongo-store', options.mongodb)
-Service.use(tasksUser, options.compilo)
+Service.use(tasksUser, {})
