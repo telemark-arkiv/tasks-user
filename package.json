@@ -29,7 +29,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/telemark/tasks-collector.git"
+    "url": "git://github.com/telemark/tasks-user.git"
   },
   "devDependencies": {
     "coveralls": "2.11.15",
