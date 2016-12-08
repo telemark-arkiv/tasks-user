@@ -7,6 +7,7 @@ const envs = process.env
 
 const options = {
   seneca: {
+    log: 'silent',
     tag: envs.TASKS_USER_TAG || 'tasks-user'
   },
   mesh: {
