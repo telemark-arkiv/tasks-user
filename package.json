@@ -15,7 +15,7 @@
   "homepage": "https://github.com/telemark/tasks-user",
   "main": "service.js",
   "engines": {
-    "node": ">=4.6.2"
+    "node": ">=4.7.0"
   },
   "scripts": {
     "test": "standard && nsp check && tap --reporter=spec test/**/*.js",
