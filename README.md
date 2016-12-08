@@ -17,25 +17,25 @@ This microservice emits the following messages
 ## Docker
 Build the image
 
-```
+```sh
 $ docker build -t tasks-user .
 ```
 
 Start
 
-```
+```sh
 $ docker run -d --net host --name tasks-user tasks-user
 ```
 
 From hub.docker.com
 
-```
+```sh
 $ docker run -d --net host --name tasks-user telemark/tasks-user
 ```
 
 Call the service
 
-```
+```sh
 $ curl -d '{"role":"tasks", "type": "user", "user":"gasg"}' -v http://localhost:8000/act
 $ curl -d '{"info":"tasks", "type": "user", "data":{"user": "gasg", "system": "npm", "data": ["awsm"]}}' -v http://localhost:8000/act
 ```
