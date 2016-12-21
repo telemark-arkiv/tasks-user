@@ -38,7 +38,7 @@
     "tap": "8.0.1"
   },
   "dependencies": {
-    "lokijs": "1.4.1",
+    "lokijs": "1.4.2",
     "seneca": "3.2.2",
     "seneca-balance-client": "0.6.0",
     "seneca-legacy-logger": "0.1.0",
