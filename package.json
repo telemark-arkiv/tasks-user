@@ -1,6 +1,6 @@
 {
   "name": "tasks-user",
-  "version": "2.1.7",
+  "version": "2.1.8",
   "description": "Collect all tasks for a user",
   "license": "MIT",
   "private": true,
