@@ -32,7 +32,7 @@
     "url": "git://github.com/telemark/tasks-user.git"
   },
   "devDependencies": {
-    "standard": "10.0.1",
+    "standard": "10.0.2",
     "coveralls": "2.12.0",
     "nsp": "2.6.3",
     "tap": "10.3.2"
